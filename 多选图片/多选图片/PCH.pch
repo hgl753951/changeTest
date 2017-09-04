@@ -1,0 +1,27 @@
+//
+//  PCH.pch
+//  多选图片
+//
+//  Created by Hero11223 on 16/5/13.
+//  Copyright © 2016年 zyy. All rights reserved.
+//
+
+#ifndef PCH_pch
+#define PCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define  RGB(a,b,c)  [UIColor colorWithRed:a/255.0f green:b/255.0f blue:c/255.0f alpha:1.0]
+
+#define FRAME [[UIScreen mainScreen] bounds]
+#define WIDTH  FRAME.size.width
+#define HEIGHT FRAME.size.height
+
+#define ADD_WIDTH  70
+#define ADD_HEIGHT 70
+#define INTERVAL_WIDHT  (WIDTH-ADD_WIDTH*3)/4
+
+#define SHOWALERT(messageString)    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:messageString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];[alert show];
+
+#endif /* PCH_pch */
